@@ -10,14 +10,32 @@ public class Main {
         LinkedList myLinkedList = new LinkedList(1);
 
         //printList
-        myLinkedList.getHead();
+       myLinkedList.getHead();
         myLinkedList.getTail();
         myLinkedList.getLength();
         myLinkedList.printList();
 
         System.out.println("----------");
 
-        //Append
+
+
+        myLinkedList.append(2);
+        myLinkedList.append(3);
+        myLinkedList.append(4);
+        myLinkedList.append(5);
+        myLinkedList.printList();
+
+        System.out.println();
+
+        System.out.println("---------");
+       myLinkedList.insert(3,4);
+
+
+
+        myLinkedList.reverse();
+        myLinkedList.printList();
+
+       //Append
         myLinkedList.append(6);
         myLinkedList.printList();
 
@@ -74,5 +92,7 @@ public class Main {
         //Reverse
         myLinkedList.reverse();
         myLinkedList.printList();
+
+
     }
 }
