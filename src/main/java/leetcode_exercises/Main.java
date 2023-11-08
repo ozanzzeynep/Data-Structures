@@ -58,6 +58,19 @@ public class Main {
         parList.partitionList(5);
         parList.printAll();
 
+        //RemoveDublicates
+
+        RemoveDuplicates removeDup = new RemoveDuplicates(1);
+        removeDup.append(2);
+        removeDup.append(3);
+        removeDup.append(1);
+        removeDup.append(4);
+        removeDup.append(2);
+        removeDup.append(5);
+
+        removeDup.removeDuplicates();
+
+        removeDup.printAll();
 
     }
 }
