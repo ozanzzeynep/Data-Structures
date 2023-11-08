@@ -36,13 +36,28 @@ public class Main {
 
         //FindKthNodeFromEnd
 
-        FindKthNodeFromEnd findMyList = new FindKthNodeFromEnd(1);
-        findMyList.append(2);
-        findMyList.append(3);
-        findMyList.append(4);
+        FindKthNodeFromEnd findMyList = new FindKthNodeFromEnd(3);
+        findMyList.append(8);
         findMyList.append(5);
+        findMyList.append(10);
+        findMyList.append(2);
+        findMyList.append(1);
 
-        System.out.println(findMyList.findKthFromEnd(2).value);
+       System.out.println(findMyList.findKthFromEnd(2).value);
+
+        System.out.println("-------------------");
+        //Partition List
+
+        PartitionList parList = new PartitionList(3);
+        parList.append(8);
+        parList.append(5);
+        parList.append(10);
+        parList.append(2);
+        parList.append(1);
+
+        parList.partitionList(5);
+        parList.printAll();
+
 
     }
 }
