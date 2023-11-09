@@ -72,5 +72,17 @@ public class Main {
 
         removeDup.printAll();
 
+        //BinaryToDecimal
+
+        System.out.println("-------------");
+        BinaryToDecimal binary = new BinaryToDecimal(1);
+        binary.append(0);
+        binary.append(1);
+        binary.append(0);
+        binary.append(1);
+        binary.append(0);
+
+        System.out.println(binary.binaryToDecimal());
+
     }
 }
